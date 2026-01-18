@@ -1,0 +1,12 @@
+n=input()
+a=0
+b=0
+for i in n:
+    if 'a' <=i <='z':
+        a+=1
+    elif  'A'<=i<='Z':
+        b+=1
+if a>=b:
+    print(n.lower())
+else:
+    print(n.upper())
