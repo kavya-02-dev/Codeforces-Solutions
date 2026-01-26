@@ -1,0 +1,14 @@
+n=int(input())
+s=input()
+if(n<26): print ( "NO" )
+else:
+    a=[0]*26
+    for i in s:
+        a[ord(i.lower())-ord('a')]+=1
+    for i in a:
+        if i==0:
+            print("NO")
+            break
+    else:
+        print("YES")
+        
